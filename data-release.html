@@ -50,10 +50,177 @@
 										<h1>Data Releases</h1>
 									</header>
 									<!-- <span class="image main"><img src="images/pic11.jpg" alt="" /></span> -->
-									<p><i>Coming soon.</i></p>
+									<p><i>Acknowledgements:</i> please cite the survey paper (<a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2025arXiv250719706M/abstract">Muzzin, Suess, Marchesini et al. 2026</a>) 
+										for any publications that use MINERVA data products, as well as the other publications noted below for specific releases. We are grateful for a longstanding 
+										community effort to observe these extragalactic deep fields. The data products below include raw data acquired by multiple different HST and JWST teams, and we request that
+										those using MINERVA data products also cite the relevant publications for these surveys. Additional details about the additional data in each field can be found
+										in the MINERVA survey paper. </p>
+									<h2>DR0: Initial Release of UDS mosaics and catalogs <i>(Jan 13, 2026)</i></h2>
+									 <h3>FitsMap </h3>
+									 <p>The following data products (mosaics, catalogs, SED fits) can be explored in this <a target="_blank" href="https://minerva.colorado.edu/uds/?ra=34.3560779&dec=-5.1404750&zoom=7">FitsMap.</a></p>
+									 <h3>NIRCam, MIRI, and HST image mosaics </h3>
+									 <p>The reduced NIRCam mosaics from the MINERVA UDS-2 observations are now available! NIRCam and HST data is reduced consistently using GRIZLI and drizzled to a 0.04" pixel scale. 
+										MIRI mosaics are reduced using a custom version of the pipeline used for the SMILES survey and drizzled to 0.08" pixel scale. Broad-band and F410M NIRCam mosaics as well as the MIRI F770W and F1800W mosaics were acquired by the <a target="_blank" href="https://primer-jwst.github.io/">PRIMER</a> 
+										team (PI: Dunlop). The mosaics below also include re-reductions of HST data from the CANDELS survey (<a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2011ApJS..197...35G/abstract">Grogin et al. 2011</a>, <a target="_blank" href="https://ui.adsabs.harvard.edu/abs/2011ApJS..197...36K/abstract">Koekemoer et al. 2011</a>) to ensure rest-frame optical coverage for 
+										low-redshift objects. Additional details will be included in a future data release publication.
+									 </p>
+									 
+									 <table>
+									 <thead>
+									 <tr>
+									 <th>NIRCam</th>
+									 <th>Files</th>
+									 </tr>
+									 </thead>
+									 <tbody>
+									 <tr>
+									 <td>F090W</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f090w-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f090w-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f090w-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F115W</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f115w-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f115w-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f115w-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F140M</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f140m-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f140m-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f140m-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F150W</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f150w-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f150w-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f150w-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F182M</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f182m-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f182m-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f182m-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F200W</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f200w-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f200w-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f200w-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F210M</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f210m-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f210m-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f210m-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F250M</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f250m-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f250m-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f250m-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F277W</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f277w-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f277w-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f277w-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F300M</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f300m-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f300m-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f300m-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F335M</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f335m-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f335m-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f335m-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F356W</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f356w-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f356w-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f356w-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F360M</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f360m-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f360m-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f360m-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F410M</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f410m-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f410m-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f410m-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F430M</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f430m-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f430m-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f430m-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F444W</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f444w-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f444w-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f444w-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F460M</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f460m-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f460m-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f460m-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F480M</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f480m-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f480m-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f480m-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 </tbody>
+									 </table>
+
+									 <table>
+									 <thead>
+									 <tr>
+									 <th>MIRI</th>
+									 <th>Files</th>
+									 </tr>
+									 </thead>
+									 <tbody>
+									 <tr>
+									 <td>F770W</td>
+									 <td><a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-sbkgsub-v2.4-80mas-f770w_drz_sci_extrabkg.fits.gz">Mosaic</a>     <a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-sbkgsub-v2.4-80mas-f770w_drz_wht.fits.gz">Weight map</a>     <a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-v2.4_f770_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F1280W</td>
+									 <td><a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-sbkgsub-v2.4-80mas-f1280w_drz_sci_extrabkg.fits.gz">Mosaic</a>     <a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-sbkgsub-v2.4-80mas-f1280w_drz_wht.fits.gz">Weight map</a>     <a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-v2.4_f1280_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F1500W</td>
+									 <td><a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-sbkgsub-v2.4-80mas-f1500w_drz_sci_extrabkg.fits.gz">Mosaic</a>     <a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-sbkgsub-v2.4-80mas-f1500w_drz_wht.fits.gz">Weight map</a>     <a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-v2.4_f1500_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F1800W</td>
+									 <td><a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-sbkgsub-v2.4-80mas-f1800w_drz_sci_extrabkg.fits.gz">Mosaic</a>     <a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-sbkgsub-v2.4-80mas-f1800w_drz_wht.fits.gz">Weight map</a>     <a href="https://minerva.colorado.edu/data_release_products/uds/miri/uds-v2.4_f1800_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 </tbody>
+									 </table>
+									 
+
+									 <table>
+									 <thead>
+									 <tr>
+									 <th>HST</th>
+									 <th>Files</th>
+									 </tr>
+									 </thead>
+									 <tbody>
+									 <tr>
+									 <td>F435W</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f435w-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f435w-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f435w-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F606W</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f606w-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f606w-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f606w-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F775W</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f775w-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f775w-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f775w-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F814W</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f814w-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f814w-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f814w-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 <tr>
+									 <td>F850LP</td>
+									 <td><a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f850lp-clear_drc_sci.fits.gz">Mosaic</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f850lp-clear_drc_wht.fits.gz">Weight map</a>     <a href="https://s3.amazonaws.com/grizli-v2/MINERVA/mosaics/uds/40mas-v2.3/uds-grizli-v8.0-minerva-v2.3-40mas-f850lp-clear_wcs.csv">Frame WCSs</a></td>
+									 </tr>
+									 </tbody>
+									 </table>
+									 									 									 
+									 <h3>Photometric Catalog</h3>
+									 <p><a href="https://minerva.colorado.edu/data_release_products/uds/catalogs/MINERVA-UDSDR0.fits">Photometric catalog</a> (<a href="https://minerva.colorado.edu/data_release_products/uds/catalogs/MINERVA-UDSDR0_README.txt">README</a>)</p>
+									 <p><a href="https://minerva.colorado.edu/data_release_products/uds/catalogs/MINERVA-UDSDR0_SEGMAP.fits.gz">Segmentation map</a></p>
+
+									 <h3>Photometric Redshift and Stellar Population Catalogs</h3>
+									 <p><a href="https://minerva.colorado.edu/data_release_products/uds/catalogs/MINERVA-UDSDR0.eazypy.zout.fits">EAZY photometric redshifts</a>(<a href="https://minerva.colorado.edu/data_release_products/uds/catalogs/MINERVA-UDSDR0.eazypy.README.txt">README</a>, <a href="https://minerva.colorado.edu/data_release_products/uds/catalogs/MINERVA-UDSDR0.eazypy.zphot.param">param file</a>, <a href="https://minerva.colorado.edu/data_release_products/uds/catalogs/MINERVA-UDSDR0.eazypy.zphot.translate">translate file</a>, <a href="https://minerva.colorado.edu/data_release_products/uds/catalogs/ez_templates_used.zip">templates</a>)</p>
+									 <p><a href="https://minerva.colorado.edu/data_release_products/uds/catalogs/MINERVA-UDSDR0_SPScatalog.fits">Prospector fitting results</a> (<a href="https://minerva.colorado.edu/data_release_products/uds/catalogs/SPS readme.txt">README</a>)</p>
+
+                                    
+                                    
+                                    <h2>Future Data Releases</h2>
                                     <p>As a large treasury program, our team is committed to providing high-quality data products for the full community. Please expect PSF-matched imaging, photometric catalogs, stellar population synthesis catalogs, and morphological catalogs for all existing JWST and HST fields. Data products will be released within 6-12 months of data acquisition; our scheduling windows are listed below and described in detail in our survey paper.</p>
-                                    <p>UDS-2: July 18 - Aug 10, 2025</p>
-                                    <p>COSMOS-2: Nov 18 - Jan 7, 2026</p>
+                                    <p>UDS-2: July 18 - Aug 10, 2025 <i>(data acquired)</i></p>
+                                    <p>COSMOS-2: Nov 18 - Jan 7, 2026 <i>(data acquired)</i></p>
                                     <p>UDS-1: Jan 4 - Jan 25, 2026</p>
                                     <p>COSMOS-1: April 16 - April 27, 2026</p>
                                     <p>AEGIS: June 16 - June 27, 2026</p>
